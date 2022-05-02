@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "postinstall": "husky install",
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
@@ -9,10 +10,13 @@
     "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
     "@nuxt/test-utils-edge": "^3.0.0-rc.1-27517945.7e912e7",
     "@nuxtjs/tailwindcss": "^5.0.3",
     "autoprefixer": "10.4.4",
     "c8": "^7.11.2",
+    "husky": "^7.0.4",
     "nuxt": "3.0.0-rc.1",
     "sass": "1.50.1",
     "sass-loader": "12.6.0",
